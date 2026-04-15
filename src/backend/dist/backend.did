@@ -1,0 +1,25 @@
+type VoiceSubmission = 
+ record {
+   audioStorageKey: text;
+   id: nat;
+   name: text;
+   phone: text;
+   timestamp: Timestamp;
+ };
+type Timestamp = int;
+type ContactSubmission = 
+ record {
+   counsellingType: text;
+   id: nat;
+   name: text;
+   phone: text;
+   timestamp: Timestamp;
+ };
+service : {
+  getContactSubmissions: () -> (vec ContactSubmission) query;
+  getVoiceSubmissions: () -> (vec VoiceSubmission) query;
+  storeContactSubmission: (name: text, phone: text, counsellingType: 
+   text) -> (nat);
+  storeVoiceSubmission: (name: text, phone: text, audioStorageKey: text) ->
+   (nat);
+}

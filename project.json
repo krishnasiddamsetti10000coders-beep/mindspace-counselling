@@ -1,0 +1,26 @@
+{
+  "overview": "A calm, trust-building psychological counselling website for a private clinic. Features a full landing page with hero, emotional connection sections, services, 3-step process, about therapist, testimonials, and a Headspace-inspired footer — all with soft colors, scroll animations, and serif/sans-serif typography.",
+  "features": [
+    "Hero section with empathetic headline and dual CTAs",
+    "Relatability cards — 'You might be feeling…'",
+    "Services section — Individual, Couples & Behavioural",
+    "3-step process guide",
+    "About therapist with trust badges",
+    "Testimonials",
+    "Final CTA section",
+    "Multi-column Headspace-style footer",
+    "Scroll-triggered fade-in animations (0.8s ease-out)",
+    "Playfair Display serif headings + Inter body font",
+    "Soft color palette: blue, sage green, warm beige, lavender"
+  ],
+  "category": "health-wellness",
+  "tags": [
+    "counselling",
+    "psychology",
+    "mental-health",
+    "landing-page",
+    "wellness",
+    "therapy"
+  ],
+  "last_updated": "2026-04-15T18:25:46.696Z"
+}

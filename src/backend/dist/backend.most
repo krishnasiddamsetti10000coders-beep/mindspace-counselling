@@ -1,0 +1,37 @@
+// Version: 1.0.0
+type ContactSubmission__185949536 =
+  {
+    counsellingType : Text;
+    id : Nat;
+    name : Text;
+    phone : Text;
+    timestamp : Timestamp__460331043
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Timestamp__301639476 = Int;
+type Timestamp__460331043 = Timestamp__301639476;
+type VoiceSubmission__843098584 =
+  {
+    audioStorageKey : Text;
+    id : Nat;
+    name : Text;
+    phone : Text;
+    timestamp : Timestamp__460331043
+  };
+actor {
+  stable contactSubmissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactSubmission__185949536]];
+      var elementIndex : Nat__490723111
+    };
+  stable var nextContactId : Nat;
+  stable var nextVoiceId : Nat;
+  stable voiceSubmissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?VoiceSubmission__843098584]];
+      var elementIndex : Nat__490723111
+    }
+};
