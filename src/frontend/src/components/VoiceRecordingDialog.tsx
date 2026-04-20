@@ -8,9 +8,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useActor } from "@caffeineai/core-infrastructure";
-import { CheckCircle2, Mic, Square } from "lucide-react";
+import { CheckCircle2, Loader2, Mic, Square } from "lucide-react";
 import { useState } from "react";
-import { ExternalBlob, createActor } from "../backend";
+import { createActor } from "../backend";
 import { useVoiceRecorder } from "../hooks/useVoiceRecorder";
 
 type Step = "info" | "record" | "success";
@@ -71,13 +71,15 @@ export function VoiceRecordingDialog({ open, onOpenChange }: Props) {
     setSubmitting(true);
     setSubmitError(null);
     try {
+      // Encode audio blob as base64 to store as a string key in the backend
       const arrayBuffer = await recorder.audioBlob.arrayBuffer();
       const uint8 = new Uint8Array(arrayBuffer);
-      const externalBlob = ExternalBlob.fromBytes(uint8);
-      // The actor's _uploadFile will handle storage and return the encoded key
-      // We pass a URL as the storage key if direct upload isn't possible
-      const storageKey = externalBlob.getDirectURL();
-      await actor.storeVoiceSubmission(name.trim(), phone.trim(), storageKey);
+      let binary = "";
+      for (let i = 0; i < uint8.byteLength; i++) {
+        binary += String.fromCharCode(uint8[i]);
+      }
+      const base64Audio = `data:${recorder.audioBlob.type};base64,${btoa(binary)}`;
+      await actor.storeVoiceSubmission(name.trim(), phone.trim(), base64Audio);
       setStep("success");
     } catch (err) {
       console.error(err);
@@ -86,6 +88,10 @@ export function VoiceRecordingDialog({ open, onOpenChange }: Props) {
       setSubmitting(false);
     }
   };
+
+  // Send button is only enabled when state is "stopped" AND audioBlob is confirmed non-null
+  const canSend =
+    recorder.state === "stopped" && recorder.audioBlob !== null && !submitting;
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
@@ -244,11 +250,29 @@ export function VoiceRecordingDialog({ open, onOpenChange }: Props) {
                     </div>
                     <p
                       className="font-body text-sm font-medium text-destructive tabular-nums"
-                      data-ocid="voice_dialog.loading_state"
+                      data-ocid="voice_dialog.recording_state"
                     >
                       Recording · {formatTime(recorder.seconds)}
                     </p>
                   </>
+                )}
+
+                {/* Processing state — waiting for onstop to fire */}
+                {recorder.state === "processing" && (
+                  <div
+                    className="flex flex-col items-center gap-3"
+                    data-ocid="voice_dialog.loading_state"
+                  >
+                    <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center">
+                      <Loader2
+                        className="w-7 h-7 text-muted-foreground animate-spin"
+                        strokeWidth={1.5}
+                      />
+                    </div>
+                    <p className="font-body text-sm text-muted-foreground">
+                      Processing recording…
+                    </p>
+                  </div>
                 )}
 
                 {recorder.state === "stopped" && recorder.audioUrl && (
@@ -267,7 +291,7 @@ export function VoiceRecordingDialog({ open, onOpenChange }: Props) {
                 )}
               </div>
 
-              {/* Actions */}
+              {/* Actions — only shown in stopped state after blob is confirmed */}
               {recorder.state === "stopped" && (
                 <div className="space-y-2">
                   {submitError && (
@@ -280,7 +304,7 @@ export function VoiceRecordingDialog({ open, onOpenChange }: Props) {
                   )}
                   <Button
                     onClick={handleSend}
-                    disabled={submitting || !recorder.audioBlob}
+                    disabled={!canSend}
                     className="w-full rounded-full bg-primary/90 hover:bg-primary text-primary-foreground font-body shadow-soft transition-smooth"
                     data-ocid="voice_dialog.send_button"
                   >

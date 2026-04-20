@@ -1,29 +1,40 @@
+import { Link } from "@tanstack/react-router";
 import { Heart, Mail, MapPin, Phone } from "lucide-react";
 
-const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+type QuickLink = {
+  label: string;
+  to: string;
+  hash?: string;
+};
+
+const quickLinks: QuickLink[] = [
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "How It Works", to: "/how-it-works" },
+  { label: "Contact", to: "/", hash: "contact" },
 ];
 
 const serviceLinks = [
-  { label: "Individual Counselling", href: "#services" },
-  { label: "Couples Counselling", href: "#services" },
-  { label: "Behavioural Support", href: "#services" },
+  { label: "Individual Counselling" },
+  { label: "Couples Counselling" },
+  { label: "Behavioural Support" },
 ];
-
-const smoothScroll =
-  (href: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: "smooth" });
-  };
 
 export function Footer() {
   const year = new Date().getFullYear();
   const hostname =
     typeof window !== "undefined" ? window.location.hostname : "";
+
+  const handleContactClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    hash?: string,
+  ) => {
+    if (hash) {
+      e.preventDefault();
+      window.location.href = `/#${hash}`;
+    }
+  };
 
   return (
     <footer className="bg-card border-t border-border/60" data-ocid="footer">
@@ -53,15 +64,20 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={smoothScroll(link.href)}
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    onClick={(e) =>
+                      handleContactClick(
+                        e as React.MouseEvent<HTMLAnchorElement>,
+                        link.hash,
+                      )
+                    }
                     className="text-sm text-muted-foreground hover:text-primary transition-smooth"
-                    data-ocid={`footer.quick_link.${link.label.toLowerCase()}`}
+                    data-ocid={`footer.quick_link.${link.label.toLowerCase().replace(/\s+/g, "_")}`}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,15 +90,14 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {serviceLinks.map((service) => (
-                <li key={service.href}>
-                  <a
-                    href={service.href}
-                    onClick={smoothScroll("#services")}
+                <li key={service.label}>
+                  <Link
+                    to="/services"
                     className="text-sm text-muted-foreground hover:text-primary transition-smooth"
                     data-ocid={`footer.service_link.${service.label.toLowerCase().replace(/\s+/g, "_")}`}
                   >
                     {service.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

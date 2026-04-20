@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-export type RecorderState = "idle" | "recording" | "stopped";
+export type RecorderState = "idle" | "recording" | "processing" | "stopped";
 
 export interface VoiceRecorderResult {
   state: RecorderState;
@@ -24,6 +24,7 @@ export function useVoiceRecorder(): VoiceRecorderResult {
   const chunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const audioUrlRef = useRef<string | null>(null);
 
   const clearTimer = useCallback(() => {
     if (timerRef.current) {
@@ -59,9 +60,13 @@ export function useVoiceRecorder(): VoiceRecorderResult {
       };
 
       recorder.onstop = () => {
+        // Ensure we collect any final chunk before building the blob
         const blob = new Blob(chunksRef.current, { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        audioUrlRef.current = url;
         setAudioBlob(blob);
-        setAudioUrl(URL.createObjectURL(blob));
+        setAudioUrl(url);
+        // Only transition to "stopped" AFTER blob + url are set
         setState("stopped");
         stopStream();
       };
@@ -82,11 +87,17 @@ export function useVoiceRecorder(): VoiceRecorderResult {
 
   const stop = useCallback(() => {
     clearTimer();
-    if (
-      mediaRecorderRef.current &&
-      mediaRecorderRef.current.state !== "inactive"
-    ) {
-      mediaRecorderRef.current.stop();
+    const recorder = mediaRecorderRef.current;
+    if (recorder && recorder.state !== "inactive") {
+      // Set processing state immediately so UI shows interim state
+      setState("processing");
+      // Request any buffered data before stopping
+      try {
+        recorder.requestData();
+      } catch {
+        // requestData not supported in all browsers — safe to ignore
+      }
+      recorder.stop();
     }
   }, [clearTimer]);
 
@@ -99,8 +110,9 @@ export function useVoiceRecorder(): VoiceRecorderResult {
     ) {
       mediaRecorderRef.current.stop();
     }
-    if (audioUrl) {
-      URL.revokeObjectURL(audioUrl);
+    if (audioUrlRef.current) {
+      URL.revokeObjectURL(audioUrlRef.current);
+      audioUrlRef.current = null;
     }
     setAudioBlob(null);
     setAudioUrl(null);
@@ -109,15 +121,15 @@ export function useVoiceRecorder(): VoiceRecorderResult {
     setError(null);
     mediaRecorderRef.current = null;
     chunksRef.current = [];
-  }, [clearTimer, stopStream, audioUrl]);
+  }, [clearTimer, stopStream]);
 
   useEffect(() => {
     return () => {
       clearTimer();
       stopStream();
-      if (audioUrl) URL.revokeObjectURL(audioUrl);
+      if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
     };
-  }, [clearTimer, stopStream, audioUrl]);
+  }, [clearTimer, stopStream]);
 
   return { state, seconds, audioBlob, audioUrl, start, stop, reset, error };
 }
