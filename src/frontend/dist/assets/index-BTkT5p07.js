@@ -32603,90 +32603,49 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$l = [
+const __iconNode$j = [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
 ];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$l);
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$k = [
-  [
-    "path",
-    {
-      d: "M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z",
-      key: "l5xja"
-    }
-  ],
-  [
-    "path",
-    {
-      d: "M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z",
-      key: "ep3f8r"
-    }
-  ],
-  ["path", { d: "M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4", key: "1p4c4q" }],
-  ["path", { d: "M17.599 6.5a3 3 0 0 0 .399-1.375", key: "tmeiqw" }],
-  ["path", { d: "M6.003 5.125A3 3 0 0 0 6.401 6.5", key: "105sqy" }],
-  ["path", { d: "M3.477 10.896a4 4 0 0 1 .585-.396", key: "ql3yin" }],
-  ["path", { d: "M19.938 10.5a4 4 0 0 1 .585.396", key: "1qfode" }],
-  ["path", { d: "M6 18a4 4 0 0 1-1.967-.516", key: "2e4loj" }],
-  ["path", { d: "M19.967 17.484A4 4 0 0 1 18 18", key: "159ez6" }]
-];
-const Brain = createLucideIcon("brain", __iconNode$k);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$j = [
+const __iconNode$i = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
   ["path", { d: "M3 10h18", key: "8toen8" }],
   ["path", { d: "m9 16 2 2 4-4", key: "19s6y9" }]
 ];
-const CalendarCheck = createLucideIcon("calendar-check", __iconNode$j);
+const CalendarCheck = createLucideIcon("calendar-check", __iconNode$i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$i = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$i);
+const __iconNode$h = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$h = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$h);
+const __iconNode$g = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$g = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$g);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$f = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$f);
+const __iconNode$f = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32695,9 +32654,9 @@ const CircleCheck = createLucideIcon("circle-check", __iconNode$f);
  */
 const __iconNode$e = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$e);
+const CircleCheck = createLucideIcon("circle-check", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32705,6 +32664,17 @@ const Clock = createLucideIcon("clock", __iconNode$e);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$d = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+];
+const Clock = createLucideIcon("clock", __iconNode$d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$c = [
   [
     "path",
     {
@@ -32713,26 +32683,15 @@ const __iconNode$d = [
     }
   ]
 ];
-const Heart = createLucideIcon("heart", __iconNode$d);
+const Heart = createLucideIcon("heart", __iconNode$c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$c = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$c);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$b = [
-  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
-  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
-];
-const Lock = createLucideIcon("lock", __iconNode$b);
+const __iconNode$b = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32740,10 +32699,10 @@ const Lock = createLucideIcon("lock", __iconNode$b);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$a = [
-  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
-  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
 ];
-const Mail = createLucideIcon("mail", __iconNode$a);
+const Lock = createLucideIcon("lock", __iconNode$a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32751,6 +32710,17 @@ const Mail = createLucideIcon("mail", __iconNode$a);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$9 = [
+  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
+  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
+];
+const Mail = createLucideIcon("mail", __iconNode$9);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$8 = [
   [
     "path",
     {
@@ -32760,19 +32730,7 @@ const __iconNode$9 = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$9);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$8 = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
-];
-const Menu = createLucideIcon("menu", __iconNode$8);
+const MapPin = createLucideIcon("map-pin", __iconNode$8);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32780,9 +32738,11 @@ const Menu = createLucideIcon("menu", __iconNode$8);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$7 = [
-  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 18h16", key: "19g7jn" }],
+  ["path", { d: "M4 6h16", key: "1o0s65" }]
 ];
-const MessageCircle = createLucideIcon("message-circle", __iconNode$7);
+const Menu = createLucideIcon("menu", __iconNode$7);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32790,11 +32750,9 @@ const MessageCircle = createLucideIcon("message-circle", __iconNode$7);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$6 = [
-  ["path", { d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", key: "131961" }],
-  ["path", { d: "M19 10v2a7 7 0 0 1-14 0v-2", key: "1vc78b" }],
-  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
 ];
-const Mic = createLucideIcon("mic", __iconNode$6);
+const MessageCircle = createLucideIcon("message-circle", __iconNode$6);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32802,6 +32760,18 @@ const Mic = createLucideIcon("mic", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
+  ["path", { d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", key: "131961" }],
+  ["path", { d: "M19 10v2a7 7 0 0 1-14 0v-2", key: "1vc78b" }],
+  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
+];
+const Mic = createLucideIcon("mic", __iconNode$5);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$4 = [
   [
     "path",
     {
@@ -32810,14 +32780,14 @@ const __iconNode$5 = [
     }
   ]
 ];
-const Phone = createLucideIcon("phone", __iconNode$5);
+const Phone = createLucideIcon("phone", __iconNode$4);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$4 = [
+const __iconNode$3 = [
   [
     "path",
     {
@@ -32833,17 +32803,7 @@ const __iconNode$4 = [
     }
   ]
 ];
-const Quote = createLucideIcon("quote", __iconNode$4);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$3 = [
-  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }]
-];
-const Square = createLucideIcon("square", __iconNode$3);
+const Quote = createLucideIcon("quote", __iconNode$3);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -32851,6 +32811,16 @@ const Square = createLucideIcon("square", __iconNode$3);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$2 = [
+  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }]
+];
+const Square = createLucideIcon("square", __iconNode$2);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1 = [
   [
     "path",
     {
@@ -32859,20 +32829,7 @@ const __iconNode$2 = [
     }
   ]
 ];
-const Star = createLucideIcon("star", __iconNode$2);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$1 = [
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
-  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
-];
-const Users = createLucideIcon("users", __iconNode$1);
+const Star = createLucideIcon("star", __iconNode$1);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -42939,6 +42896,127 @@ function ContactSection() {
     }
   );
 }
+function ServiceCard({
+  service,
+  isExpanded,
+  onExpand,
+  onCollapse,
+  index: index2
+}) {
+  const handleMouseEnter = () => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    if (!isMobile) onExpand(service.id);
+  };
+  const handleMouseLeave = () => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    if (!isMobile) onCollapse();
+  };
+  const handleClick = () => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    if (isMobile) {
+      if (isExpanded) {
+        onCollapse();
+      } else {
+        onExpand(service.id);
+      }
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "button",
+    {
+      type: "button",
+      "aria-expanded": isExpanded,
+      "aria-label": `${service.title}: ${service.brief}`,
+      onMouseEnter: handleMouseEnter,
+      onMouseLeave: handleMouseLeave,
+      onClick: handleClick,
+      "data-ocid": `services.item.${index2 + 1}`,
+      className: [
+        "group relative bg-card rounded-2xl border border-border/50 shadow-card text-left",
+        "cursor-pointer select-none overflow-hidden",
+        "transition-all duration-300 ease-out",
+        "hover:shadow-soft hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        isExpanded ? "col-span-2 lg:col-span-2 xl:col-span-2 ring-1 ring-primary/30 shadow-soft" : "col-span-1"
+      ].join(" "),
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: `h-0.5 w-full ${service.bgClass} opacity-80 transition-all duration-300`
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: [
+              "flex transition-all duration-300 ease-out",
+              isExpanded ? "flex-row gap-0" : "flex-col"
+            ].join(" "),
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: [
+                    "flex flex-col p-5 transition-all duration-300 ease-out",
+                    isExpanded ? "min-w-[180px] w-[180px] shrink-0 border-r border-border/40" : "w-full"
+                  ].join(" "),
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "div",
+                      {
+                        className: `w-9 h-9 ${service.bgClass} rounded-xl flex items-center justify-center mb-3 shrink-0`,
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: `text-base font-display font-bold ${service.colorClass}`,
+                            children: service.id
+                          }
+                        )
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-base font-semibold text-foreground leading-snug mb-1.5", children: service.title }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: [
+                          "font-body text-xs text-muted-foreground leading-relaxed transition-all duration-200",
+                          isExpanded ? "line-clamp-3" : "line-clamp-2"
+                        ].join(" "),
+                        children: service.brief
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-auto pt-2 flex items-center gap-1 md:hidden", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        ChevronDown,
+                        {
+                          className: `w-3.5 h-3.5 ${service.colorClass} transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`,
+                          strokeWidth: 2
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `text-[10px] font-body ${service.colorClass}`, children: isExpanded ? "Less" : "More" })
+                    ] })
+                  ]
+                }
+              ),
+              isExpanded && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col p-5 flex-1 overflow-hidden", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-[10px] uppercase tracking-widest text-muted-foreground mb-3 font-medium", children: "What's included" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-2 overflow-y-auto max-h-[220px] pr-1 scrollbar-thin", children: service.subServices.map((sub) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: `mt-1 w-1.5 h-1.5 rounded-full ${service.bgClass} shrink-0`
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-body text-xs text-foreground/80 leading-relaxed", children: sub })
+                ] }, sub)) })
+              ] })
+            ]
+          }
+        )
+      ]
+    }
+  );
+}
 function AnimatedDiv({
   children,
   delay = 0,
@@ -42982,25 +43060,640 @@ const feelings = [
 ];
 const services = [
   {
-    icon: Heart,
+    id: 1,
     title: "Individual Counselling",
-    description: "A space to explore your thoughts, emotions, and personal challenges with guidance and care.",
-    color: "text-primary",
-    bg: "bg-primary/10"
+    brief: "A safe, confidential space to explore personal challenges and emotional growth.",
+    subServices: [
+      "Gain clarity, self-awareness, and emotional strength",
+      "Manage stress, anxiety, anger, and life transitions",
+      "Build healthy coping skills",
+      "Develop positive thinking patterns",
+      "Achieve personal growth and inner balance"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
   },
   {
-    icon: Users,
+    id: 2,
+    title: "Couple Counselling",
+    brief: "Improve communication and resolve conflicts together.",
+    subServices: [
+      "A safe space to express feelings openly",
+      "Rebuild trust, emotional connection, and mutual respect",
+      "Manage disagreements and life changes",
+      "Strengthen your relationship",
+      "Build a balanced, fulfilling partnership"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 3,
+    title: "Stress Management",
+    brief: "Learn to cope with daily pressures and find balance.",
+    subServices: [
+      "Understand personal stress triggers",
+      "Relaxation and calming techniques",
+      "Improve emotional balance and focus",
+      "Live a calmer, more balanced life"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 4,
+    title: "Anxiety",
+    brief: "Reduce excessive worry and fear to find inner calm.",
+    subServices: [
+      "A safe space to talk about your concerns",
+      "Calm the mind and body",
+      "Build confidence and emotional strength",
+      "Achieve inner calm and mental well-being"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 5,
+    title: "Time Management",
+    brief: "Use your time effectively and reduce overwhelm.",
+    subServices: [
+      "Setting clear goals and priorities",
+      "Plan daily tasks better",
+      "Reduce stress caused by overload",
+      "Achieve improved productivity and balance"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 6,
+    title: "Memory Tips",
+    brief: "Improve memory and concentration for better performance.",
+    subServices: [
+      "Understand concepts instead of rote learning",
+      "Practical techniques for better recall and revision",
+      "Healthy study habits and stress reduction",
+      "Improved academic confidence and performance"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 7,
+    title: "Psychodynamic Counselling",
+    brief: "Understand deep emotional patterns from your past.",
+    subServices: [
+      "Explore past experiences influencing present thoughts and behaviour",
+      "Gain awareness of unconscious feelings and conflicts",
+      "Resolve long-standing emotional difficulties",
+      "Achieve lasting emotional healing and self-understanding"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 8,
+    title: "Marital & Relationship Counselling",
+    brief: "Improve understanding and communication in your relationship.",
+    subServices: [
+      "Resolve conflicts and emotional misunderstandings",
+      "A safe, respectful space to express feelings",
+      "Rebuild trust and emotional connection",
+      "Build healthier, happier, more balanced relationships"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 9,
+    title: "De-Addiction Counselling",
+    brief: "Break free from dependency with compassionate support.",
+    subServices: [
+      "Understand emotional, psychological, and behavioural factors behind addiction",
+      "Develop healthier coping mechanisms",
+      "Build long-term recovery strategies"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 10,
+    title: "Suicidal Intervention",
+    brief: "Immediate, compassionate emotional support during crisis.",
+    subServices: [
+      "Feel heard, understood, and safe without judgment",
+      "Reduce emotional distress and restore hope",
+      "Support for families and caregivers",
+      "Achieve safety, emotional stability, and gradual healing"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 11,
+    title: "LGBTQIA+ Affirmative Support",
+    brief: "A safe, inclusive, non-judgmental space for your journey.",
+    subServices: [
+      "Explore emotions, identity, relationships, and life challenges",
+      "Your lived experiences are affirmed",
+      "Build resilience, self-acceptance, and emotional well-being",
+      "Find understanding, acceptance, dignity, and confidence"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 12,
+    title: "Psychometric Testing",
+    brief: "Scientifically designed tools to understand your abilities and personality.",
+    subServices: [
+      "Gain insights for personal, academic, and professional growth",
+      "Understand emotional functioning and behavioural patterns",
+      "Receive personalized strategies based on results"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 13,
+    title: "PTSD Counselling",
+    brief: "Compassionate support for processing traumatic experiences.",
+    subServices: [
+      "Process painful memories and emotions",
+      "Manage fear, anxiety, and emotional distress",
+      "Build coping skills and emotional stability",
+      "Achieve recovery, resilience, and improved quality of life"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 14,
+    title: "Adolescent Counselling",
+    brief: "A safe space for young individuals navigating growing up.",
+    subServices: [
+      "Address stress, anxiety, and mood changes",
+      "Manage academic pressure and performance concerns",
+      "Build self-esteem and resolve identity confusion",
+      "Navigate peer pressure and social challenges",
+      "Develop emotional regulation skills",
+      "Balance screen time, focus, and lifestyle"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 15,
+    title: "Sex Counselling",
+    brief: "A safe, confidential space for intimacy and sexual well-being.",
+    subServices: [
+      "Understand needs, address challenges, and improve communication",
+      "Build emotional connection, confidence, and healthy expression",
+      "Achieve more fulfilling relationships and overall well-being"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 16,
+    title: "Marriage Counselling",
+    brief: "A secure environment to strengthen your marriage.",
+    subServices: [
+      "Gain insight into each other's perspectives",
+      "Resolve conflicts constructively",
+      "Rebuild trust",
+      "Build emotional intimacy, mutual respect, and healthier relationship patterns"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 17,
+    title: "Pre-Marriage Counselling",
+    brief: "Prepare for a healthy, lasting partnership.",
+    subServices: [
+      "Explore expectations, values, communication styles, and future goals",
+      "Strengthen understanding and build emotional readiness",
+      "Develop effective conflict-resolution skills",
+      "Gain clarity, compatibility, and a strong foundation"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 18,
+    title: "Post-Marriage Counselling",
+    brief: "Navigate the realities of married life with confidence.",
+    subServices: [
+      "Address emerging challenges and improve communication",
+      "Foster understanding and emotional connection",
+      "Build stability, resilience, and a fulfilling married life"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 19,
+    title: "Break-Up Counselling",
+    brief: "Process emotional pain and heal after a relationship ends.",
+    subServices: [
+      "Understand your feelings and rebuild self-esteem",
+      "Develop healthy coping strategies",
+      "Achieve healing, emotional resilience, and personal growth"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 20,
     title: "Couples Counselling",
-    description: "Helping partners understand each other better, improve communication, and rebuild connection.",
-    color: "text-secondary",
-    bg: "bg-secondary/20"
+    brief: "A collaborative environment to deepen your connection.",
+    subServices: [
+      "Improve communication, resolve conflicts, and deepen emotional understanding",
+      "Build trust, empathy, and healthier relationship patterns",
+      "Achieve relationship satisfaction and long-term emotional well-being"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
   },
   {
-    icon: Brain,
-    title: "Behavioural Support",
-    description: "Work through habits, patterns, and behaviours that may be holding you back.",
-    color: "text-accent",
-    bg: "bg-accent/20"
+    id: 21,
+    title: "Divorce Counselling",
+    brief: "Navigate the emotional and practical challenges of separation.",
+    subServices: [
+      "Process complex feelings and manage conflict",
+      "Achieve emotional healing, clarity, and resilience",
+      "Move forward with confidence, stability, and renewed direction"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 22,
+    title: "Domestic Violence Counselling",
+    brief: "A safe, confidential, non-judgmental environment for healing.",
+    subServices: [
+      "Process trauma, restore self-worth, and develop coping strategies",
+      "Build safety strategies for the future",
+      "Achieve empowerment, emotional healing, and renewed control"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 23,
+    title: "Parental Counselling",
+    brief: "Support for the challenges and joys of parenting.",
+    subServices: [
+      "Manage child behaviour and discipline",
+      "Bridge communication gaps with children and teens",
+      "Address emotional outbursts and parenting stress",
+      "Manage screen time, routines, and consistency",
+      "Support academic pressure and motivation",
+      "Build boundaries with empathy"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 24,
+    title: "Learning Disability Counselling",
+    brief: "Compassionate support for dyslexia, dysgraphia, and dyscalculia.",
+    subServices: [
+      "Build confidence and improve learning skills",
+      "Promote overall well-being",
+      "Receive personalized strategies for your unique needs"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 25,
+    title: "Abandonment Counselling",
+    brief: "Heal from feeling left, rejected, or unseen.",
+    subServices: [
+      "Rebuild confidence and inner stability",
+      "Develop healthier connections",
+      "Create a secure sense of self"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 26,
+    title: "ADHD Counselling",
+    brief: "Manage attention, impulsivity, and hyperactivity challenges.",
+    subServices: [
+      "Improve focus, attention, and task completion",
+      "Address impulsivity and emotional outbursts",
+      "Manage restlessness and hyperactivity",
+      "Build time management and organization skills",
+      "Navigate academic or workplace struggles",
+      "Boost self-esteem and performance confidence"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 27,
+    title: "Behavioural Counselling",
+    brief: "Reshape patterns of behaviour for a better quality of life.",
+    subServices: [
+      "Manage anger and emotional outbursts",
+      "Address negative habits and repetitive behaviours",
+      "Improve self-control and reduce impulsivity",
+      "Address stress-related behavioural patterns",
+      "Overcome social and interpersonal challenges",
+      "Build motivation and consistency"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 28,
+    title: "Family Counselling",
+    brief: "Improve communication and resolve conflicts within the family.",
+    subServices: [
+      "Bridge communication gaps and misunderstandings",
+      "Resolve parent-child conflicts",
+      "Reduce relationship stress within the family",
+      "Reconnect emotionally",
+      "Navigate life transitions together",
+      "Manage expectations and boundaries"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 29,
+    title: "Parenting Counselling",
+    brief: "Navigate the challenges of raising children with confidence.",
+    subServices: [
+      "Manage child behaviour and discipline",
+      "Bridge communication gaps with children and teens",
+      "Address emotional outbursts and parenting stress",
+      "Balance screen time, routines, and consistency",
+      "Support academic pressure and motivation",
+      "Build boundaries with empathy"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 30,
+    title: "Low Self-Esteem Counselling",
+    brief: "Reconnect with your self-worth and inner confidence.",
+    subServices: [
+      "Overcome self-doubt and negative self-talk",
+      "Build confidence in personal and professional life",
+      "Address fear of failure or judgment",
+      "Manage comparison and feelings of inadequacy",
+      "Learn to set healthy boundaries",
+      "Heal the impact of past experiences on self-worth"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 31,
+    title: "Grief Counselling",
+    brief: "Process grief and loss in a safe, understanding space.",
+    subServices: [
+      "Navigate denial, anger, bargaining, sadness, and acceptance",
+      "Address loss of a loved one, relationship, or life transition",
+      "Find meaning and gently move forward"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 32,
+    title: "Anger Management",
+    brief: "Understand and regulate intense emotions constructively.",
+    subServices: [
+      "Identify triggers and underlying causes of anger",
+      "Learn practical strategies to respond calmly",
+      "Build emotional balance and healthier relationships"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 33,
+    title: "Depression Counselling",
+    brief: "Manage low mood and gradually regain motivation.",
+    subServices: [
+      "Explore underlying concerns and emotional challenges",
+      "Find practical ways to manage low mood",
+      "Achieve clarity, strength, and gradual recovery"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 34,
+    title: "Bipolar Disorder Counselling",
+    brief: "Navigate bipolar disorder and mood changes with support.",
+    subServices: [
+      "Recognize early signs and manage emotional fluctuations",
+      "Build coping skills, routine-building, and self-monitoring strategies",
+      "Achieve consistency, control, and a more balanced life"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 35,
+    title: "Panic Attack Counselling",
+    brief: "Cope with panic attacks and overwhelming fear.",
+    subServices: [
+      "Build awareness, grounding, and regulation techniques",
+      "Develop skills to respond calmly during intense moments",
+      "Achieve reduced anxiety and a greater sense of ease"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 36,
+    title: "Bullying Counselling",
+    brief: "Support for individuals affected by bullying.",
+    subServices: [
+      "Build self-awareness, confidence, and emotional resilience",
+      "Learn to cope and respond assertively",
+      "Regain a sense of control and improve self-esteem"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 37,
+    title: "Eating Disorders Counselling",
+    brief: "Compassionate support for eating-related concerns.",
+    subServices: [
+      "Understand patterns, thoughts, and underlying triggers",
+      "Build healthier coping strategies",
+      "Achieve a balanced relationship with food and improved well-being"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 38,
+    title: "Overthinking Counselling",
+    brief: "Break free from repetitive thought patterns.",
+    subServices: [
+      "Gain clarity, manage uncertainty, and calm the mind",
+      "Reduce rumination and make confident decisions",
+      "Achieve a clearer mindset and improved daily functioning"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 39,
+    title: "Negative Thinking Counselling",
+    brief: "Manage self-critical and negative thoughts effectively.",
+    subServices: [
+      "Build awareness, reframing, and emotional regulation skills",
+      "Learn practical strategies to shift thinking patterns",
+      "Achieve a more positive outlook and balanced state of mind"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 40,
+    title: "Insomnia & Sleep Disorders",
+    brief: "Address insomnia and sleep challenges for restful nights.",
+    subServices: [
+      "Calm the mind and create effective sleep habits",
+      "Manage restlessness and nighttime overthinking",
+      "Achieve more restful sleep and a balanced lifestyle"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 41,
+    title: "Personality Counselling",
+    brief: "Better understand yourself and your interpersonal patterns.",
+    subServices: [
+      "Explore your traits, patterns, and interpersonal dynamics",
+      "Navigate challenges and enhance your strengths",
+      "Build confidence, balance, and meaningful personal development"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 42,
+    title: "Career Counselling",
+    brief: "Make informed, confident career decisions.",
+    subServices: [
+      "Understand your strengths, interests, and goals",
+      "Gain clarity on suitable career paths and opportunities",
+      "Make confident choices and achieve meaningful professional growth"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 43,
+    title: "Education Counselling",
+    brief: "Make informed educational choices for academic success.",
+    subServices: [
+      "Understand your interests, strengths, and academic goals",
+      "Gain clarity on suitable courses and learning pathways",
+      "Make confident decisions and achieve academic success"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 44,
+    title: "Work-Life Balance Counselling",
+    brief: "Manage work-life pressures for greater satisfaction.",
+    subServices: [
+      "Explore your routines, responsibilities, and stress patterns",
+      "Balance productivity with personal well-being",
+      "Achieve greater satisfaction, clarity, and emotional balance"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 45,
+    title: "Menopause Counselling",
+    brief: "Support for women navigating the changes of menopause.",
+    subServices: [
+      "Understand emotional, physical, and lifestyle shifts",
+      "Develop strategies to manage mood changes, stress, and discomfort",
+      "Achieve greater balance, confidence, and well-being"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 46,
+    title: "Alzheimer's Counselling",
+    brief: "Support for individuals with Alzheimer's and their caregivers.",
+    subServices: [
+      "Address cognitive changes, behavioural symptoms, and emotional responses",
+      "Build evidence-informed strategies for communication and daily management",
+      "Improve functioning, caregiver confidence, and quality of life"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 47,
+    title: "Dementia Counselling",
+    brief: "Clinically guided support for dementia-related concerns.",
+    subServices: [
+      "Address memory decline, behavioural patterns, and psychological impact",
+      "Build structured techniques for coping, routine-building, and care planning",
+      "Achieve safety, consistency, and overall well-being"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
+  },
+  {
+    id: 48,
+    title: "Phobia Counselling",
+    brief: "Overcome specific fears and phobias with structured support.",
+    subServices: [
+      "Understand your triggers and anxiety responses",
+      "Use gradual, structured techniques to face and reduce fear",
+      "Build increased confidence and improved daily functioning"
+    ],
+    colorClass: "text-accent",
+    bgClass: "bg-accent/20"
+  },
+  {
+    id: 49,
+    title: "Motivation Counselling",
+    brief: "Overcome lack of motivation and regain your direction.",
+    subServices: [
+      "Identify barriers, goals, and personal drivers",
+      "Build strategies for consistency and purposeful action",
+      "Achieve increased focus, confidence, and productivity"
+    ],
+    colorClass: "text-primary",
+    bgClass: "bg-primary/15"
+  },
+  {
+    id: 50,
+    title: "EAP (Employee Assistance)",
+    brief: "Support employees with personal and work-related concerns.",
+    subServices: [
+      "Address stress, emotional well-being, and workplace challenges",
+      "Receive confidential guidance and practical coping strategies",
+      "Achieve improved well-being, productivity, and work performance"
+    ],
+    colorClass: "text-secondary",
+    bgClass: "bg-secondary/20"
   }
 ];
 const steps$1 = [
@@ -43045,6 +43738,73 @@ const testimonials = [
     role: "Behavioural support"
   }
 ];
+function ServicesSection({ onVoiceDialog }) {
+  const [expandedId, setExpandedId] = reactExports.useState(null);
+  const collapseTimer = reactExports.useRef(null);
+  const handleExpand = reactExports.useCallback((id) => {
+    if (collapseTimer.current) clearTimeout(collapseTimer.current);
+    setExpandedId(id);
+  }, []);
+  const handleCollapse = reactExports.useCallback(() => {
+    collapseTimer.current = setTimeout(() => setExpandedId(null), 120);
+  }, []);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "section",
+    {
+      id: "services",
+      className: "py-20 md:py-24 bg-background",
+      "data-ocid": "services.section",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-6 max-w-7xl", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SectionHeading,
+          {
+            badge: "How I can help",
+            title: "Services tailored to you",
+            subtitle: "Every person's journey is different. Explore 50 specialist areas of support — hover or tap any card to see what's included."
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "grid gap-3",
+            style: {
+              gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))"
+            },
+            "data-ocid": "services.list",
+            children: services.map((service, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              ServiceCard,
+              {
+                service,
+                isExpanded: expandedId === service.id,
+                onExpand: handleExpand,
+                onCollapse: handleCollapse,
+                index: i
+              },
+              service.id
+            ))
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatedDiv, { delay: 300, className: "flex justify-center mt-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            onClick: onVoiceDialog,
+            className: "inline-flex items-center gap-2.5 rounded-full px-6 py-3 bg-accent/15 hover:bg-accent/25 border border-accent/35 text-accent-foreground shadow-card hover:shadow-soft transition-smooth font-body text-sm font-medium",
+            "data-ocid": "services.voice_recording_button",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-7 h-7 rounded-full bg-accent/25 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Mic, { className: "w-4 h-4 text-accent", strokeWidth: 1.5 }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+                "Unable to pick a service?",
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-accent font-semibold", children: "Record a voice message" })
+              ] })
+            ]
+          }
+        ) })
+      ] })
+    }
+  );
+}
 function HomePage() {
   const [voiceDialogOpen, setVoiceDialogOpen] = reactExports.useState(false);
   const handleBooking = () => {
@@ -43173,70 +43933,7 @@ function HomePage() {
         ] })
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "section",
-      {
-        id: "services",
-        className: "py-20 md:py-24 bg-background",
-        "data-ocid": "services.section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-6 max-w-6xl", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            SectionHeading,
-            {
-              badge: "How I can help",
-              title: "Services tailored to you",
-              subtitle: "Every person's journey is different. I offer specialised support across three key areas."
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid md:grid-cols-3 gap-6", children: services.map((service, i) => {
-            const Icon2 = service.icon;
-            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              AnimatedDiv,
-              {
-                delay: i * 100,
-                className: "group bg-card rounded-2xl p-7 border border-border/50 shadow-card hover:shadow-soft hover:-translate-y-1 transition-all duration-300",
-                "data-ocid": `services.item.${i + 1}`,
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
-                    {
-                      className: `w-12 h-12 ${service.bg} rounded-xl flex items-center justify-center mb-5`,
-                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Icon2,
-                        {
-                          className: `w-6 h-6 ${service.color}`,
-                          strokeWidth: 1.5
-                        }
-                      )
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-xl font-semibold text-foreground mb-3", children: service.title }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm text-muted-foreground leading-relaxed", children: service.description })
-                ]
-              },
-              service.title
-            );
-          }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatedDiv, { delay: 300, className: "flex justify-center mt-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "button",
-            {
-              type: "button",
-              onClick: () => setVoiceDialogOpen(true),
-              className: "inline-flex items-center gap-2.5 rounded-full px-6 py-3 bg-accent/15 hover:bg-accent/25 border border-accent/35 text-accent-foreground shadow-card hover:shadow-soft transition-smooth font-body text-sm font-medium",
-              "data-ocid": "services.voice_recording_button",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-7 h-7 rounded-full bg-accent/25 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Mic, { className: "w-4 h-4 text-accent", strokeWidth: 1.5 }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-                  "Unable to pick a service?",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-accent font-semibold", children: "Record a voice message" })
-                ] })
-              ]
-            }
-          ) })
-        ] })
-      }
-    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(ServicesSection, { onVoiceDialog: () => setVoiceDialogOpen(true) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       VoiceRecordingDialog,
       {
